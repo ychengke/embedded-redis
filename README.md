@@ -7,6 +7,10 @@ embedded-redis
 
 Redis embedded server for Java integration testing
 
+### 0.7 版本说明
+将redis.exe动态的存放路径调整为固定路径(JarUtil.java)，以方便设置window防火墙。不然每次启动都需要手动 “允许” 一次
+目前单元测试不通过，可能skip test执行package，得到embedded-redis-0.7.jar，使用上没有问题。
+
 Maven dependency
 ==============
 
